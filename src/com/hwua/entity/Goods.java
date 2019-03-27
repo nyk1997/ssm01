@@ -11,6 +11,8 @@ public class Goods {
     private String goods_img;
     private Integer goods_type;
 
+
+
     public Goods() {
     }
 
