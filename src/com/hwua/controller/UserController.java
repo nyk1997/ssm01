@@ -29,6 +29,10 @@ public class UserController {
         String rand = (String)hs.getAttribute("rand");
         if (rand.equalsIgnoreCase(auth)){
             String info = userService.selectUserByUsername(user_username,user_password);
+        if(info.equals("登陆成功")){
+            hs.setAttribute("user_username",user_username);
+        }
+
             return info;
         }else{
             return "验证码错误";
@@ -48,4 +52,17 @@ public class UserController {
 
     }
 
+@RequestMapping(value="/logout",produces="text/html;charset=UTF-8")
+@ResponseBody
+public String logout(HttpSession hs) {
+
+        hs.setAttribute("user_username",null);
+       //注销hs.removeAttribute("user_username");
+        return "注销成功";
 }
+}
+
+
+
+
+

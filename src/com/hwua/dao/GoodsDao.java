@@ -8,4 +8,7 @@ public interface GoodsDao {
 
     public List<Goods> selectAllGoods();
 
+  /*  //分页查询
+    public List<Goods> selectAllGoodsForPage(int pageNumber,int pageSize);*/
+
 }

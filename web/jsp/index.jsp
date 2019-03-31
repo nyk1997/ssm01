@@ -11,15 +11,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>易买网 - 首页</title>
 <link type="text/css" rel="stylesheet" href="<%=path%>/static/css/style.css" />
-<script type="text/javascript" src="<%=path%>/static/js/jquery-3.1.0.js"></script>
-<script type="text/javascript" src="<%=path%>/static/js/index.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/index.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/index_top.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/index_product_sort.js"></script>
 
 </head>
 <body>
-<%@ include file="jsp/index_top.jsp"  %>
+<%@ include file="index_top.jsp"  %>
 <div id="main" class="wrap">
 	<div class="lefter">
-		<%@ include file="jsp/index_product_sort.jsp"%>
+		<%@ include file="index_product_sort.jsp"%>
 		<div class="spacer"></div>
 		<div class="last-view">
 			<h2>最近浏览</h2>
@@ -38,13 +40,13 @@
 			<h2>今日特价</h2>
 			<ul id="goods" class="product clearfix">
 				
-				<%--<li>
+				<li>
 					<dl>
 						<dt><a href="#" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
 						<dd class="title"><a href="#" target="_self">测试的商品</a></dd>
 						<dd class="price">￥12.34</dd>
 					</dl>
-				</li>--%>
+				</li>
 
 
 		 </ul>
@@ -67,7 +69,7 @@
 		</div>
 	
 		<div class="side">
-			<%@ include file="jsp/index_news.jsp" %>
+			<%@ include file="index_news.jsp" %>
 		</div>
 	
 		<div class="spacer clear"></div>		

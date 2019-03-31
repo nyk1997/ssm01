@@ -16,12 +16,12 @@ import java.util.List;
 public class GoodsController {
     @Autowired
     GoodsService goodsService;
-
+//查询所有商品
     @RequestMapping(value = "/getGoods",produces = "text/html;charset=UTF-8")
     @ResponseBody
     public String getGoods(){
         //List<Goods> list = goodsService.selectAllGoods();
-        List<Goods> list = goodsService.selectAllGoodsForPage(2,12);
+        List<Goods> list = goodsService.selectAllGoodsForPage(1,12);
         String str = JSON.toJSONString(list);
 
         return str;

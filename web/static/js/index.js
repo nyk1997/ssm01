@@ -8,6 +8,7 @@ $(document).ready(function () {
             dataType:"json",
             type:"post",
             success:function (data) {
+
                 for(var i = 0; i<data.length;i++){
                     var $li = $(
                         "<li>" +
@@ -27,5 +28,8 @@ $(document).ready(function () {
         });
     }
 
+
+
     getGoods();
+
 });

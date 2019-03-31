@@ -58,7 +58,7 @@ $(document).ready(function () {
                 success:function (data) {
                     alert(data);
                     if(data=="登陆成功"){
-                        self.location.href="../index.jsp"
+                        self.location.href="../../jsp/index.jsp"
                     }
                 },
                 error:function () {

@@ -14,6 +14,7 @@ public class GoodsServiceImpl implements GoodsService {
     @Autowired
     GoodsDao goodsDao;
 
+
     @Override
     public List<Goods> selectAllGoods() {
         List<Goods> list = goodsDao.selectAllGoods();

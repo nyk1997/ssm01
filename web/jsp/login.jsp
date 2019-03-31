@@ -12,6 +12,9 @@
 	<link type="text/css" rel="stylesheet" href="<%=path%>/static/css/style.css" />
 	<script type="text/javascript" src="<%=path%>/static/js/jquery-3.1.0.js"></script>
 	<script type="text/javascript" src="<%=path%>/static/js/login.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/index_top.js"></script>
+    <script type="text/javascript" src="<%=path%>/static/js/index_product_sort.js"></script>
+
 </head>
 <body>
 <%@ include file="index_top.jsp"  %>

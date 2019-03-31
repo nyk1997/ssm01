@@ -8,5 +8,9 @@
     <select id="selectAllGoods" resultType="goods">
         select * from goods
     </select>
+   <!-- <select id="selectAllGoodsForPage"  resultType="goods">
+        select * from goods
+    </select>-->
+
     
 </mapper>

@@ -14,7 +14,7 @@
 <%@ include file="index_top.jsp"  %>
 
 <div id="position" class="wrap">
-	您现在的位置：<a href="../index.jsp">易买网</a> &gt; 购物车
+	您现在的位置：<a href="index.jsp">易买网</a> &gt; 购物车
 </div>
 <div class="wrap">
 	<div id="shopping">
