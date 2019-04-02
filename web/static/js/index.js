@@ -8,13 +8,12 @@ $(document).ready(function () {
             dataType:"json",
             type:"post",
             success:function (data) {
-
                 for(var i = 0; i<data.length;i++){
                     var $li = $(
                         "<li>" +
                             "<dl>" +
-                                "<dt><a href='#' target='_self'><img src='/ssm01/"+data[i].goods_img+"' /></a></dt>" +
-                                "<dd class='title'><a href='#' target='_self'>"+data[i].goods_name+"</a></dd>" +
+                                "<dt><a href='/ssm01/goods/selectGoodsById?goods_id="+data[i].goods_id+"' target='_self'><img src='/ssm01/"+data[i].goods_img+"' /></a></dt>" +
+                                "<dd class='title'><a href='/ssm01/jsp/product_view.jsp?goods_id="+data[i].goods_id+"' target='_self'>"+data[i].goods_name+"</a></dd>" +
                                 "<dd class='price'>"+data[i].goods_price+"</dd>" +
                             "</dl>"+
                         "</li>"

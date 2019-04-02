@@ -10,8 +10,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>易买网 - 首页</title>
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="scripts/function.js"></script>
+<link type="text/css" rel="stylesheet" href="<%=path%>/static/css/style.css" />
+<script type="text/javascript" src="<%=path%>/static/js/function.js"></script>
 </head>
 <body>
 <%@ include file="index_top.jsp"  %>
@@ -26,12 +26,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<h2>最近浏览</h2>
 			<dl class="clearfix">
 				
-					<dt><img style="width: 54px; height: 54px;" src="images/product/0.jpg" /></dt>
+					<dt><img style="width: 54px; height: 54px;" src="<%=path%>/static/images/product/0.jpg" /></dt>
 					<dd><a href="#">商品名称</a></dd>
 					
-					<dt><img style="width: 54px; height: 54px;" src="images/product/0.jpg" /></dt>
+					<dt><img style="width: 54px; height: 54px;" src="<%=path%>/static/images/product/0.jpg" /></dt>
 					<dd><a href="#">商品名称</a></dd>
 			</dl>
+			<ul id="goods" class="product clearfix">
+
+				<li>
+					<dl>
+						<dt><a href="/ssm01/jsp/product_view.jsp" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
+						<dd class="title"><a href="#" target="_self">测试的商品</a></dd>
+						<dd class="price">￥12.34</dd>
+					</dl>
+				</li>
+
+
+			</ul>
+
 		</div>
 	</div>
 	<div class="main">
@@ -42,20 +55,33 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 				<li>
 					<dl>
-						<dt><a href="#" target="_self"><img src="images/product/0.jpg" /></a></dt>
-						<dd class="title"><a href="#" target="_self">商品名称</a></dd>
-						<dd class="price">￥12.34</dd>
+						<dt><a href="#" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
+						<dd class="title"><a href="#" target="_self">1号耳机</a></dd>
+						<dd class="price">￥188</dd>
 					</dl>
 				</li>
 
 				<li>
 					<dl>
-						<dt><a href="#" target="_self"><img src="images/product/0.jpg" /></a></dt>
-						<dd class="title"><a href="#" target="_self">商品名称</a></dd>
-						<dd class="price">￥12.34</dd>
+						<dt><a href="#" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
+						<dd class="title"><a href="#" target="_self">2号耳机</a></dd>
+						<dd class="price">￥99</dd>
 					</dl>
 				</li>
-				
+				<li>
+					<dl>
+						<dt><a href="#" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
+						<dd class="title"><a href="#" target="_self">3号耳机</a></dd>
+						<dd class="price">￥20</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><a href="#" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
+						<dd class="title"><a href="#" target="_self">4号耳机</a></dd>
+						<dd class="price">￥10</dd>
+					</dl>
+				</li>
 				
 			</ul>
 			<div class="clear"></div>

@@ -10,7 +10,7 @@ $(document).ready(function () {
                 //清空ul中内容
                 $("#BigType").html("");
                 //加载商品分类
-                $("#BigType").append($("<li class='first'><a>商品类型</a></li>"))
+                $("#BigType").append($("<li class='first'><a>商品分类</a></li>"))
                 //遍历所有商品大类型
                 for(var i = 0; i<data.length;i++){
                     var $li = $("<li class='first'><a href='#'>"+data[i].type_name+"</a></li>")
@@ -24,7 +24,7 @@ $(document).ready(function () {
     };
     getAllBigType();
 
-//注销
+/*//注销
     $("#logout").click(function () {
         $ajax({
 
@@ -45,5 +45,5 @@ $(document).ready(function () {
 
         });
         return false;//强制阻止所有事件
-    });
+    });*/
 });

@@ -138,12 +138,12 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #reply-box table td input.text { border:1px solid #ccc; width:320px; padding:4px 6px; }
 #reply-box table td textarea { border:1px solid #ccc; width:320px; height:80px; padding:4px 6px; }
 
-#product .infos .thumb { float:left; width:320px; text-align:center; }
-#product .infos .buy { float:right; width:440px; line-height:40px; }
-#product .infos .buy .price { color:#c00; font-weight:bold; font-size:24px; }
+#product .infos .thumb { float:left; width:320px; text-align:center; font-size: 24px; }
+#product .infos .buy { float:right; width:440px; line-height:40px; font-size: 22px;}
+#product .infos .buy .price { color:#c00; font-weight:bold; font-size:30px; }
 #product .infos .buy .button { border:1px solid #ffefd2; padding:10px; background:#fff8e7; margin:20px auto; text-align:center; }
-#product .infos .buy .button input { border:0; margin:0 10px; background:url(../images/bg.png) left -176px; height:35px; width:144px; cursor:pointer; }
-#product .introduce .text { padding:20px; font-size:14px; line-height:25px; }
+#product .infos .buy .button input { border:1px; font-size: 16px; font-weight: bold; margin:20px auto; background:#fbaa62 left -176px; height:35px; width:144px; cursor:pointer; }
+#product .introduce .text { padding:20px; font-size:20px; line-height:25px; }
 
 #shopping { }
 #shopping table { width:100%; line-height:24px; border-top:2px solid #dfc9b2; border-bottom:2px solid #dfc9b2; }

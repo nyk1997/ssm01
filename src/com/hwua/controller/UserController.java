@@ -45,7 +45,7 @@ public class UserController {
         User user = new User(null,userName,passWord,sex,birthday,identity,email,mobile,address);
         int number = userService.insertUser(user);
         if(number==1){
-            return "login";
+            return "reg-result";
         }else{
             return "register";
         }

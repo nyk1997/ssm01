@@ -20,15 +20,15 @@ public class AuthImg extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	
 	// 设置图形验证码中字符串的字体和大小  
-    private Font myFont = new Font("Arial Black", Font.PLAIN, 16);  
-  
+    private Font myFont = new Font("SimSun",Font.BOLD, 20);
+
     @Override  
     public void init() throws ServletException {  
         super.init();  
     }  
     
     // 生成随机颜色  
-    Color getRandColor(int fc, int bc) {  
+    Color getRandColor(int fc, int bc) {
         Random random = new Random();  
         if (fc > 255)  
             fc = 255;  
@@ -38,7 +38,7 @@ public class AuthImg extends HttpServlet{
         int g = fc + random.nextInt(bc - fc);  
         int b = fc + random.nextInt(bc - fc);  
         return new Color(r, g, b);  
-    }  
+    }
   
     @Override  
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {  

@@ -22,6 +22,7 @@ public class TypeController {
     TypeService typeService;
 //查询所有商品类型
 public String selectAllType(){
+   List<Type> list=typeService.selectAllType();
     return "";
 }
 

@@ -9,8 +9,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>易买网 - 首页</title>
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="scripts/function.js"></script>
+	<link type="text/css" rel="stylesheet" href="<%=path%>/static/css/style.css" />
+	<script type="text/javascript" src="<%=path%>/static/js/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/index.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/function.js"></script>
+
 </head>
 <body>
 <%@ include file="index_top.jsp"  %>
@@ -24,7 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<em class="corner rt"></em>
 			<div class="box">
 				<div class="msg">
-					<p>恭喜：购买成功！</p>
+					<p>恭喜：添加成功！</p>
 					<p>正在进入首页...</p>
 					<script type="text/javascript">
 						setTimeout("location.href='#'", 3000);

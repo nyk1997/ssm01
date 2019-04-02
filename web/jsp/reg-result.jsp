@@ -9,8 +9,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>易买网 - 首页</title>
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="scripts/function.js"></script>
+	<link type="text/css" rel="stylesheet" href="<%=path%>/static/css/style.css" />
+	<script type="text/javascript" src="<%=path%>/static/js/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/login.js"></script>
+
 </head>
 <body>
 <%@ include file="index_top.jsp"  %>
@@ -26,9 +28,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</ul>
 			<div class="msg">
 				<p>恭喜：注册成功！</p>
-				<p>正在进入首页...</p>
+				<p>正在进入登陆页面...</p>
 				<script type="text/javascript">
-					setTimeout("location.href='#'", 3000);
+					setTimeout("location.href='../jsp/login.jsp'", 3000);
 				</script>
 			</div>
 		</div>

@@ -11,4 +11,7 @@ public interface GoodsDao {
   /*  //分页查询
     public List<Goods> selectAllGoodsForPage(int pageNumber,int pageSize);*/
 
+    public Goods selectGoodsById(Integer goods_id);
+
+
 }

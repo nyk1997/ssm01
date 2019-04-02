@@ -15,6 +15,8 @@
 	<script type="text/javascript" src="<%=path%>/static/js/index.js"></script>
 	<script type="text/javascript" src="<%=path%>/static/js/index_top.js"></script>
 	<script type="text/javascript" src="<%=path%>/static/js/index_product_sort.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/product_view.js"></script>
+	<script type="text/javascript" src="<%=path%>/static/js/logout.js"></script>
 
 </head>
 <body>
@@ -42,7 +44,7 @@
 				
 				<li>
 					<dl>
-						<dt><a href="#" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
+						<dt><a href="/ssm01/jsp/product_view.jsp" target="_self"><img src="<%=path%>/static/images/product/0.jpg" /></a></dt>
 						<dd class="title"><a href="#" target="_self">测试的商品</a></dd>
 						<dd class="price">￥12.34</dd>
 					</dl>

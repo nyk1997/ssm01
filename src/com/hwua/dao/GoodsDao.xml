@@ -11,6 +11,8 @@
    <!-- <select id="selectAllGoodsForPage"  resultType="goods">
         select * from goods
     </select>-->
-
+    <select id="selectGoodsById" resultType="goods" parameterType="int">
+        select * from goods where goods_id=#{goods_id}
+    </select>
     
 </mapper>

@@ -1,12 +1,11 @@
-
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	double num = Math.random();
- %>
+%>
+
 <div id="header" class="wrap">
 	<div id="logo"><img src="<%=path%>/static/images/logo.gif" /></div>
-	
 	<div class="help">
 		<a href="#" class="shopping">购物车</a>
 		<!--登陆前显示的-->
@@ -19,6 +18,7 @@
 			<a href="#">用户：${sessionScope.user_username}</a>
 			<a id="logout" href="<%=path%>/jsp/login.jsp">注销</a>
 		</c:if>
+
 
 
 
